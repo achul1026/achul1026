@@ -16,7 +16,7 @@
 > **"왜 이 구조여야 하는가"** 를 먼저 묻는 백엔드 개발자.
 
 > [!NOTE]
-> 보안 · 인증 · 교통 · 공공 SI 도메인에서 **약 4년간 7개 이상의 프로젝트**를 수행했습니다.
+> 보안 · 인증 · 교통 · 공공 · 임대주택 · PKI 도메인에서 **약 4년간 9개 이상의 프로젝트**를 수행했습니다.
 > 팀원으로 시작해 **PL → PM · Lead Architect** 로 성장하며, 설계 · 개발 · 운영 · 리딩의 균형을 추구합니다.
 
 <br>
@@ -42,9 +42,13 @@ timeline
                 : 국제 ODA · 20인 팀
         2024.11 : Blueveri 간편인증
                 : Docker · K8s · ArgoCD 자가 구축
-    section 2025~ · 아키텍처
-        2025.01 : HR 시스템 · 임대주택 플랫폼
-                : PM · Lead Architect
+    section 2025 · 아키텍처·연구
+        2025.01 : Innercity 임대주택 플랫폼
+                : PM · Lead Architect (진행중)
+        2025.01 : HR 시스템 구축
+                : PL · 8인 팀 (진행중)
+        2025.하반기 : KISA 전자서명인증서 통합조회
+                : 설계 연구 · 시스템 구축안 설계
 ```
 
 <br>
@@ -116,10 +120,10 @@ GitLab CI/CD · **Docker · Kubernetes · ArgoCD** 기반 자동 배포 환경 �
 
 <div align="center">
 
-| 💼 경력 | 🗂️ 프로젝트 | 💾 빅데이터 | ⚡ 응답속도 | 👥 PL 팀 규모 | 🗺️ 통합 지자체 |
+| 💼 경력 | 🗂️ 프로젝트 | 💾 빅데이터 | ⚡ 응답속도 | 👥 PL 팀 규모 | 🌐 도메인 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **3년 11개월** | **7+** | **40TB** | **10초 이내** | **20인** | **31개** |
-| ㈜블루더스 · 재직중 | SI · 보안 · 교통 · 인증 | 경기도 ITS | 수십초 → 10초 | 국제 ODA | KT · 교통정보센터 |
+| **3년 11개월** | **9+** | **40TB** | **10초 이내** | **20인** | **6+** |
+| ㈜블루더스 · 재직중 | SI · 보안 · 교통 · 인증 · 임대주택 | 경기도 ITS | 수십초 → 10초 | 국제 ODA | KISA · KOICA · KT · 정부기관 |
 
 </div>
 
@@ -202,17 +206,49 @@ GitLab CI/CD · **Docker · Kubernetes · ArgoCD** 기반 자동 배포 환경 �
 ## 🚀 Featured Projects
 
 <details open>
-<summary><b>🏢 2025.01 ~ &nbsp;|&nbsp; HR 시스템 · 민간임대주택 플랫폼 &nbsp;<sup>PM · Lead Architect</sup></b></summary>
+<summary><b>🏢 2025.01 ~ 진행중 &nbsp;|&nbsp; Innercity — 민간임대주택 플랫폼 &nbsp;<sup>PM · Lead Architect</sup></b></summary>
 <br>
 
-> 인사·급여·조직·근태 통합 HR Admin 시스템 + 대규모 정산·계약 데이터 관리 임대주택 플랫폼
+> **임대주택 운영사 홈페이지 리뉴얼 + 민간임대주택 관리 시스템**.
+> 대규모 정산·계약 데이터를 안정적으로 관리하는 백엔드 핵심 구조 수립.
 
-- Java · Spring Boot **멀티 프로젝트 Gradle 구조** 도입 — 모듈 간 의존성 분리
+- Java · Spring Boot **멀티 프로젝트 Gradle 구조** — Admin / Tenant Portal / Homepage 모듈 분리
 - **PostgreSQL 아키텍처** 수립 및 백엔드 핵심 구조 설계
-- Spring Security · JWT 기반 **부서별 권한 분기** · HttpOnly 쿠키 보안 체계
+- Spring Security · JWT 기반 권한 체계 · **HttpOnly 쿠키** 보안
 - WBS 기반 일정 조율 · 고객사 대외 커뮤니케이션 리딩
 
-`Spring Boot` `PostgreSQL` `JPA` `QueryDSL` `Spring Batch` `JWT` `GitLab CI/CD`
+`Spring Boot` `PostgreSQL` `JPA` `QueryDSL` `Spring Batch` `JWT`
+
+</details>
+
+<details>
+<summary><b>👥 2025.01 ~ 진행중 &nbsp;|&nbsp; HR 시스템 구축 &nbsp;<sup>PL · 8인 팀 · 기여도 70%</sup></b></summary>
+<br>
+
+> 인사 · 급여 · 조직 · 근태 통합 HR Admin 시스템. **전체 백엔드 아키텍처 담당**.
+
+- ERD/DB 설계 전담 · 프로세스 구상
+- Spring Security · JWT 기반 **부서별 권한 분기** 보안 아키텍처
+- Spring Batch 배치 프로그램 설계·운영
+- 프로젝트 셋팅 및 GitLab CI/CD 구성
+
+`Spring Boot` `PostgreSQL` `JPA` `QueryDSL` `Spring Batch` `GitLab CI/CD`
+
+</details>
+
+<details>
+<summary><b>🔐 2025년 하반기 &nbsp;|&nbsp; KISA 전자서명인증서 통합조회 시스템 설계 연구 &nbsp;<sup>시스템 구축안 설계 · 40%</sup></b></summary>
+<br>
+
+> **한국인터넷진흥원(KISA) 발주**, 에스지랩 · ㈜블루더스 컨소시엄 수행.
+> 입찰공고 2025-118호 · 사업비 94,000,000원.
+
+- **PKI 기반 인증서 lifecycle** (발급 · 통합조회 · 안전한 폐기) 시스템 구축안 설계
+- **OpenSSL 기반 PKI 암호 체계** · 디지털 서명·검증 표준 분석
+- 공공·금융·민간 발주기관 인증서 연동 아키텍처 제시
+- Blueveri (KISA 간편인증 표준 준용 솔루션) 구축 경험 기반 기술적 쟁점·제약사항 분석
+
+`PKI` `OpenSSL` `전자서명` `Certificate Lifecycle` `시스템 설계 연구`
 
 </details>
 
